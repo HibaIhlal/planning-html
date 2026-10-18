@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <title>Planning</title>
+</head>
+<body>
+
+<header class="planning-header">
+    <div class="planning">
+        <i class="bi bi-calendar-week-fill"></i>
+        <h2>Mon Planning</h2>
+    </div>
+    <nav>
+        <a href=""><h3>Tableau de bord</h3></a>
+        <a href=""><h3>Ressources</h3></a>
+    </nav>
+
+    <div class="user">
+        <i class="bi bi-person-circle"></i>
+    </div>
+</header>
+
+<main class="content">
+    <section class="title">
+        <h1>Gestion des tâches</h1>
+        <p>Organisez vos tâches et suivez leur avancement.</p>
+    </section>
+
+    <section class="reporting">
+        <article class="report-box">
+            <p>Total des tâches</p>
+            <h2>12</h2>
+        </article>
+        <article class="report-box">
+            <p>En cours</p>
+            <h2>7</h2>
+        </article>
+        <article class="report-box">
+            <p>Terminées</p>
+            <h2>5</h2>
+        </article>
+    </section>
+
+    <section class="form">
+        <article class="form-box">
+            <h2>Nouvelle tâche</h2>
+            <form>
+                <label for="title">Titre:</label><br>
+                <input type="text" id="title" name="title" placeholder="Ex. Préparer la démonstration"><br>
+                <label for="resource">Ressource:</label><br>
+                <input type="text" id="resource" name="resource">
+                <label for="start">Début:</label><br>
+                <input type="datetime-local" id="start" name="start">
+                <label for="end">Fin:</label><br>
+                <input type="datetime-local" id="end" name="end">
+                <label for="status">Statut:</label><br>
+                <select id="status" name="status">
+                    <option value="todo">A Faire</option>
+                    <option value="doing">En Cours</option>
+                    <option value="done">Terminée</option>
+                </select>
+                <button type="submit" id="add" name="add">Ajouter la tâche</button>
+            </form>
+        </article>
+    </section>
+
+    <section class="list">
+        <article class="list-box">
+            <h2>Liste des tâches</h2>
+        <nav>
+            <a href=""><h3>Toutes</h3></a>
+            <a href=""><h3>En Cours</h3></a>
+            <a href=""><h3>Terminées</h3></a>
+        </nav>
+        <table>
+            <thead>
+            <tr>
+                <th>Tâche</th>
+                <th>Ressource</th>
+                <th>Horaire</th>
+                <th>Statut</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Préparer la démo</td>
+                <td>Omar</td>
+                <td>09:00 - 10:30</td>
+                <td>En Cours</td>
+            </tr>
+            <tr>
+                <td>Corriger le filtre</td>
+                <td>Nabil</td>
+                <td>10:30 - 11:30</td>
+                <td>Terminée</td>
+            </tr>
+            <tr>
+                <td>Tester le planning</td>
+                <td>Tiavina</td>
+                <td>13:00 - 14:00</td>
+                <td>A Faire</td>
+            </tr>
+            <tr>
+                <td>Rédiger la documentation</td>
+                <td>Omar</td>
+                <td>14:00 - 15:30</td>
+                <td>En Cours</td>
+            </tr>
+            </tbody>
+        </table>
+
+        </article>
+    </section>
+
+</main>
+
+<footer>
+</footer>
+</body>
+
+</html>
+ 
