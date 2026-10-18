@@ -1,0 +1,272 @@
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #374151;
+    margin: 0;
+}
+
+.content {
+    background-color: #F2F3F7;
+    padding: 25px;
+}
+
+.planning-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+}
+
+.planning {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.planning h2 {
+    font-size: 22px;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+.tabs h3 {
+    font-size: 18px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.title h1 {
+    color: #0A0E17;
+}
+
+.title p {
+    color: #6B7280;
+}
+
+.reporting {
+    display: flex;
+    gap: 30px;
+}
+
+.report-box {
+    flex: 1; /* prend la place restante */
+    background-color: white;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.report-box p {
+    color: #6B7280;
+}
+
+.report-box h2 {
+    color: #111827;
+}
+
+.tasks {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.form {
+    flex: 0 0 400px; /* grow et shrink à 0 et taille de base à 400px */
+}
+
+.form-box {
+    background-color: white;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.form-box h2 {
+    font-size: 20px;
+    color: #111827;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-attribut {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-control,
+.form-select {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #F2F3F7;
+    outline: none;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.list {
+    background-color: white;
+    padding: 22px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 0; /* peut rétrecir plus que sa ytaille min */
+}
+
+.list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-box h2 {
+    font-size: 20px;
+    color: #111827;
+}
+
+.status-tabs {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.status-tabs h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.status-tabs a {
+    color: #6b7280;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.status-tabs a.active {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+
+.status-tabs a:hover {
+    background-color: #f2f3f7;
+    color: #3730a3;
+}
+
+.list-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-box th,
+.list-box td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+}
+
+.list-box tbody tr:hover {
+    background-color: #F2F3F7;
+    cursor: pointer;
+}
+
+.todo,
+.doing,
+.done {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.todo {
+    background-color: lightgrey;
+    color: #616161;
+}
+
+.doing {
+    background-color: #FFAF7F;
+    color: darkorange;
+}
+
+.done {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+@media (max-width: 900px) {
+    .tasks {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form,
+    .list {
+        width: 100%;
+        flex: none;
+    }
+
+    .reporting {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 15px;
+    }
+
+    .planning-header {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .tabs {
+        margin: 0;
+        gap: 15px;
+    }
+
+    .user {
+        margin-right: 0;
+    }
+
+    .form-box,
+    .list {
+        padding: 15px;
+    }
+
+    .list {
+        overflow-x: auto; /* pour barre de défilement, si dépasse la taille */
+    }
+
+    .list-box table {
+        min-width: 500px;
+    }
+}
